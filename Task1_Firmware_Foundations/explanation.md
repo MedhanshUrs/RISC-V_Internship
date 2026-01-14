@@ -27,7 +27,7 @@ Firmware libraries hide hardware-specific details and allow developers
 to focus on functionality rather than low-level implementation.
 This makes code easier to maintain, reuse, and scale across projects.
 
-![Firmware Stack Diagram](screenshots/Firmware_stack.png)
+![Firmware Stack Diagram](screenshots/Firmware_Stack.png)
 
 ## Why APIs are Important in Embedded Systems
 
