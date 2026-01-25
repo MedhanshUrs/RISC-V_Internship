@@ -27,7 +27,7 @@ The output was captured using a serial terminal.
 Images/UART/UART_Proof.png
 
 **Video (UART output scrolling):**
-Videos/UART/VID20260125194935.mp4
+Videos/UART/VID20260125203851.mp4
 
 
 ### Observations
