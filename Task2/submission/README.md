@@ -40,16 +40,13 @@ UART output is used to confirm firmware execution and program flow.
 **UART Messages Sent:**
 - Boot message (indicates firmware start)  
 - Task identifier message  
-- Repeated loop status message (printed every iteration)  
+- Counter incrementing message (printed every iteration)  
 
-**Example Output:**
-VSDSquadron Mini Booted
-Task 2: GPIO + UART Validation
-LED toggled
-LED toggled
-LED toggled
+Example Output:
+Count: 1
+Count: 2
+Count: 3
 ...
-
 
 These messages confirm:
 - UART initialization is successful  
