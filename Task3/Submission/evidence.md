@@ -7,91 +7,87 @@
 
 ### Serial Terminal Configuration
 
-| Parameter | Value |
-|----------|-------|
-| Tool | PuTTY |
-| COM Port | COM3 |
-| Baud Rate | 115200 |
-| Data Bits | 8 |
-| Stop Bits | 1 |
-| Parity | None |
-| Flow Control | None |
+| Parameter      | Value  |
+|---------------|--------|
+| Tool           | PuTTY  |
+| COM Port       | COM3   |
+| Baud Rate      | 115200 |
+| Data Bits      | 8      |
+| Stop Bits      | 1      |
+| Parity         | None   |
+| Flow Control   | None   |
 
 ---
 
-UART Evidence Media
+### UART Evidence Media
 
-Screenshot: UART_PuTTy.png
+**Screenshot:** `UART_PuTTy.png`  
 📸 Screenshot showing:
 
-PuTTY terminal window
+- PuTTY terminal window  
+- COM3 port visible  
+- Baud rate set to 115200  
+- Startup banner  
+- RX and echo logs (10+ lines)  
 
-COM3 port visible
+---
 
-Baud rate set to 115200
+## Hardware Evidence
 
-Startup banner
+### Hardware Evidence Media
 
-RX and echo logs (10+ lines)
-
-
-Hardware Evidence Media
-
-Video: VID20260127145432.mp4
+**Video:** `VID20260127145432.mp4`  
 🎥 Short video showing:
 
-Board powered ON
+- Board powered ON  
+- PuTTY terminal open  
+- Characters being typed  
+- Echo output appearing  
+- `'1'` typed in terminal  
+- External LED turning ON  
+- `'1'` typed again  
+- External LED turning OFF  
 
-PuTTY terminal open
+---
 
-Characters being typed
-
-Echo output appearing
-
-'1' typed in terminal
-
-External LED turning ON
-
-'1' typed again
-
-External LED turning OFF
-
-Explanation
+## Explanation
 
 The demo application uses the UART driver library to perform all UART operations.
 
-Workflow:
+### Workflow
 
-uart_init(115200) initializes the UART peripheral
-
-uart_receive_char() waits for a character from the serial terminal
-
-Received characters are echoed using:
-
-uart_send_char()
-
-uart_send_string()
-
-When the character '1' is received:
-
-The application toggles the GPIO PD2 output
-
-The external LED connected on the breadboard changes state
-
-A confirmation message is printed over UART
+1. `uart_init(115200)` initializes the UART peripheral  
+2. `uart_receive_char()` waits for a character from the serial terminal  
+3. Received characters are echoed using:
+   - `uart_send_char()`  
+   - `uart_send_string()`  
+4. When the character `'1'` is received:
+   - The application toggles the GPIO PD2 output  
+   - The external LED connected on the breadboard changes state  
+   - A confirmation message is printed over UART  
 
 All UART hardware interaction is performed only through the UART driver APIs.
 
 ---
 
+## Verification Summary
+
 This evidence confirms that:
 
-The UART driver library works correctly
+- The UART driver library works correctly  
+- The application correctly uses the library APIs  
+- UART echo and command-based interaction function as expected  
+- The external LED on a breadboard toggles using GPIO PD2  
+- The firmware runs on real VSDSquadron Mini hardware  
 
-The application correctly uses the library APIs
+---
 
-UART echo and command-based interaction function as expected
+## Summary
 
-The external LED on a breadboard toggles using GPIO PD2
+All Task-3 evidence requirements have been satisfied:
 
-The firmware runs on real VSDSquadron Mini hardware
+- UART RX/TX verified  
+- UART echo verified  
+- Command-based LED control verified  
+- Real hardware execution verified  
+- Library and application separation verified  
