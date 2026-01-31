@@ -58,18 +58,18 @@ interactive reaction-time game.
 
 ## How to Demo
 
-Open the serial terminal and use the following commands:
+### Open the serial terminal and use the following commands:
 
-h or ? → Show help menu (This exact command options menu)
-0 → LED OFF
-1 → Slow blink mode
-2 → Fast blink mode
-3 → Double-blink pattern
-4 → Reaction-time game
+- h or ? → Show help menu (This exact command options menu)
+- 0 → LED OFF
+- 1 → Slow blink mode
+- 2 → Fast blink mode
+- 3 → Double-blink pattern
+- 4 → Reaction-time game
 
 
-Inside the reaction game:
+### Inside the reaction game:
 
-Press any key when the LED turns ON → measure reaction (Lower the reaction score is better – score is measured in loop counts)
-q → exit game mode
+- Press any key when the LED turns ON → measure reaction (Lower the reaction score is better – score is measured in loop counts)
+- q → exit game mode
 
