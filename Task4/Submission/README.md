@@ -1,4 +1,4 @@
-# Project-11 – UART-Controlled Mode Machine
+# Task 4 – UART-Controlled Mode Machine
 
 This project implements a UART-controlled mode machine on the VSDSquadron Mini (CH32V003 RISC-V board).  
 Multiple operating modes can be selected at runtime through a serial terminal without resetting the board.  
