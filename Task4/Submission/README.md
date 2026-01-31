@@ -70,6 +70,6 @@ h or ? → Show help menu (This exact command options menu)
 
 Inside the reaction game:
 
-Press any key when the LED turns ON → measure reaction (Lower the time the better)
+Press any key when the LED turns ON → measure reaction (Lower the reaction score is better – score is measured in loop counts)
 q → exit game mode
 
