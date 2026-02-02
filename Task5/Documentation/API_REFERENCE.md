@@ -1,4 +1,4 @@
-# Driver API Reference
+# API Reference
 
 This document describes the public APIs exposed by the UART and GPIO driver libraries used by the *UART-Controlled Mode Machine* project running on the VSDSquadron Mini (CH32V003).
 
