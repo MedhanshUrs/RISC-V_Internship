@@ -7,7 +7,7 @@ The application layer does not directly access peripheral registers.
 
 ---
 
-# UART Driver API
+# 1. UART Driver API
 
 ## Overview
 
@@ -188,7 +188,7 @@ if (uart_char_available())
 
 ---
 
-# GPIO Driver API
+# 2. GPIO Driver API
 
 ## Overview
 
